@@ -7,32 +7,72 @@ $twitterBackgroundColor: #e6ecf0;
     box-sizing: border-box;
 }
 
-.sidebarOption {
+body {
     display: flex;
-    align-items: center;
-    cursor: pointer;
-    
-    &:hover {
-        background-color: $twitterBackgroundColor;
-        border-radius: 30px;
-        color: $twitterColor;
-        transition: color 100ms ease-out;
-    }
-    
-    h2 {
-        font-weight: 800;
-        font-size: 20px;
-        margin-right: 20px;   
-    }
-    
-    .material-icons {
-        padding: 20px;
-    }
+    height: 100vh;
+    max-width: 1300px;
+    margin: auto 0 auto 0;
+    padding: 0 10px;
+}
+
+.sidebar {
+    border-right: 1px solid $twitterBackgroundColor;
+    flex: .2;
+    min-width: 250px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     .fa-twitter {
-        padding: 20px;
+        color: $twitterColor;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    .sidebarOption {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: $twitterBackgroundColor;
+            border-radius: 30px;
+            color: $twitterColor;
+            transition: color 100ms ease-out;
+        }
+        
+        h2 {
+            font-weight: 800;
+            font-size: 20px;
+            margin-right: 20px;   
+        }
+        
+        &.active {
+            color: $twitterColor;
+        }
+        
+        .material-symbols-outlined {
+            padding: 20px;
+        }
+    }
+
+    .sidebar_tweet {
+        width: 100%;
+        background-color: $twitterColor;
+        border: none;
+        color: white;
+        font-weight: 900;
+        border-radius: 30px;
+        height: 50px;
+        margin-top: 20px;
     }
 }
+
+
+
+
+
+
 
 
 
