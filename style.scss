@@ -121,6 +121,26 @@ body {
                 height: 40px;
             }
         }
+
+        .tweetButton {
+            background-color: $twitterColor;
+            border: none;
+            color: white;
+            font-weight: 900;
+            border-radius: 30px;
+            width: 80px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: auto;
+        }
+    }
+
+    .post {
+        
+        img {
+            border-radius: 50%;
+            height: 40px;
+        }
     }
 }
 
