@@ -56,4 +56,50 @@ body {
   border-radius: 30px;
   height: 50px;
   margin-top: 20px;
+}
+
+.feed {
+  flex: 0.5;
+  border-right: 1px solid #e6ecf0;
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.feed .feed_header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid #e6ecf0;
+  padding: 15px 20px;
+}
+.feed .feed_header h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.feed .tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid #e6ecf0;
+  padding-right: 10px;
+}
+.feed .tweetBox form {
+  display: flex;
+  flex-direction: column;
+}
+.feed .tweetBox .tweetBox_input {
+  display: flex;
+  padding: 20px;
+}
+.feed .tweetBox .tweetBox_input input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.feed .tweetBox .tweetBox_input img {
+  border-radius: 50%;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */

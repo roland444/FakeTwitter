@@ -13,6 +13,7 @@ body {
     max-width: 1300px;
     margin: auto 0 auto 0;
     padding: 0 10px;
+
 }
 
 .sidebar {
@@ -67,6 +68,63 @@ body {
         margin-top: 20px;
     }
 }
+
+.feed {
+    flex: .5;
+    border-right: 1px solid $twitterBackgroundColor;
+    min-width: fit-content;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .feed_header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 100;
+        border: 1px solid $twitterBackgroundColor;
+        padding: 15px 20px;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+
+    .tweetBox {
+        padding-bottom: 10px;
+        border-bottom: 8px solid $twitterBackgroundColor;
+        padding-right: 10px;
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tweetBox_input {
+            display: flex;
+            padding: 20px;
+
+            input {
+                flex: 1;
+                margin-left: 20px;
+                font-size: 20px;
+                border: none;
+                outline: none;
+            }
+
+            img {
+                border-radius: 50%;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
 
 
 
